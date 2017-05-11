@@ -46,9 +46,6 @@ public class GzipUtils {
 			for (File file : directory.listFiles()) {
 				if(file.isDirectory()){
 					checkFile(file, suffixs, filterSuffixs);
-				}
-				log.info(file.getName());
-				if(file.getName().lastIndexOf(".")==-1){
 					continue;
 				}
 				String fileSuffix = file.getName().substring(file.getName().lastIndexOf("."));
